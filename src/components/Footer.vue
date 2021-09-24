@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <footer class="bg-gray-100 w-full pt-10 pb-24 sm:pb-10">
+  <footer class="bg-gray-100 w-full pt-10 pb-16 sm:pb-4">
     <div class="px-8 sm:flex sm:justify-center">
       <div class="sm:mr-24">
         <h3 class="uppercase text-md font-semibold">О нас</h3>

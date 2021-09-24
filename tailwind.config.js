@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     backgroundImage: {
       'home-screen': "url('@/assets/images/home-screen.jpg')",
-      'card-1': "url('@/assets/images/summer-woman.png')"
+      'card-kk': "url('@/assets/images/places/beach-kk.jpg')",
+      'card-azov': "url('@/assets/images/places/sea-azov.jpg')",
+      'card-ab': "url('@/assets/images/places/shells-ab.jpg')",
+      'card-crimea': "url('@/assets/images/places/summer-crimea.jpg')",
     },
     colors: {
       // Build your palette here
