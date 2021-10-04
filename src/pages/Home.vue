@@ -1,6 +1,16 @@
 <script setup>
+import {ref} from 'vue'
+
 import FirstScreenSearch from "@/components/FirstScreenSearch.vue"
 import FooterPage from "@/components/Footer.vue"
+import DefaultCard from "@/components/cards/DefaultCard.vue"
+
+const cities = ref([
+  {id: 1, name: 'Краснодарский край', imageSrc: 'bg-card-kk'},
+  {id: 2, name: 'Азовское море', imageSrc: 'bg-card-azov'},
+  {id: 3, name: 'Крым', imageSrc: 'bg-card-crimea'},
+  {id: 4, name: 'Абхазия', imageSrc: 'bg-card-ab'},
+])
 </script>
 
 <template>
@@ -8,51 +18,8 @@ import FooterPage from "@/components/Footer.vue"
     <first-screen-search></first-screen-search>
     <section class="container mx-auto px-10 py-10">
       <h2 class="text-2xl font-bold mb-8">Популярные направления</h2>
-      <div class="flex flex-wrap items-center justify-center sm:justify-start">
-        <div class="flex flex-col mb-4 mr-8">
-          <div
-            class="
-              w-64
-              h-64
-              bg-card-kk bg-no-repeat bg-center bg-cover
-              rounded-xl
-            "
-          ></div>
-          <div class="font-medium">Краснодарский край</div>
-        </div>
-        <div class="flex flex-col mb-4 mr-8">
-          <div
-            class="
-              w-64
-              h-64
-              bg-card-azov bg-no-repeat bg-center bg-cover
-              rounded-xl
-            "
-          ></div>
-          <div class="font-medium">Азовское море</div>
-        </div>
-        <div class="flex flex-col mb-4 mr-8">
-          <div
-            class="
-              w-64
-              h-64
-              bg-card-crimea bg-no-repeat bg-center bg-cover
-              rounded-xl
-            "
-          ></div>
-          <div class="font-medium">Крым</div>
-        </div>
-        <div class="flex flex-col mb-4 last:mr-0">
-          <div
-            class="
-              w-64
-              h-64
-              bg-card-ab bg-no-repeat bg-center bg-cover
-              rounded-xl
-            "
-          ></div>
-          <div class="font-medium">Абхазия</div>
-        </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-cols-max">
+        <default-card v-for="city in cities" :key="city.id" :place="city"></default-card>
       </div>
     </section>
 

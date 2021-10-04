@@ -2,7 +2,7 @@
   "name": "gtorel.com",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "npx vite",
     "build": "vite build",
     "serve": "vite preview"
   },
