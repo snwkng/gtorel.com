@@ -5,10 +5,10 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="flex flex-col mb-4 mr-8">
+  <router-link to="/" class="flex flex-col mb-8 pr-2 pl-2 w-full sm:w-1/2 md:w-1/4">
     <div
-        :class="[`w-64 h-64 bg-no-repeat bg-center bg-cover rounded-xl ${place.imageSrc}`]"
+        :class="[`w-full h-80 bg-no-repeat bg-center bg-cover rounded-xl ${place.imageSrc}`]"
     ></div>
-    <div class="font-medium">{{place.name}}</div>
-  </div>
+    <div class="font-medium mt-2">{{place.name}}</div>
+  </router-link>
 </template>

@@ -10,6 +10,7 @@ module.exports = {
       'card-azov': "url('@/assets/images/places/sea-azov.jpg')",
       'card-ab': "url('@/assets/images/places/shells-ab.jpg')",
       'card-crimea': "url('@/assets/images/places/summer-crimea.jpg')",
+      'sprinter': "url('@/assets/images/mercedessprinter.png')",
     },
     colors: {
       // Build your palette here
@@ -33,6 +34,7 @@ module.exports = {
     extend: {
       color: ['active'],
       boxShadow: ['active', 'hover'],
+      margin: ['last'],
     },
   },
   plugins: [],
