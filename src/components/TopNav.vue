@@ -9,7 +9,6 @@
         <router-link to="#" class="pr-4 pl-4">К морю</router-link>
         <router-link to="#" class="pr-4 pl-4">Экскурсии</router-link>
       </div>
-      <div class="text-2xl">GalaTour</div>
     </nav>
   </header>
 </template>

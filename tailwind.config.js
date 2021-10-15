@@ -39,6 +39,7 @@ module.exports = {
       color: ['active'],
       boxShadow: ['active', 'hover'],
       margin: ['last'],
+      borderRadius: ['first', 'last']
     },
   },
   plugins: [],
