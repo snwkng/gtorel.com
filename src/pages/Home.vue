@@ -5,6 +5,8 @@ import MainSection from "../components/MainSection.vue"
 import FooterPage from "../components/Footer.vue"
 import DefaultCard from "../components/cards/DefaultCard.vue"
 import BusRent from "../components/BusRent.vue"
+import SectionExcursions from "../components/SectionExcursions.vue"
+import TopNav from "../components/TopNav.vue"
 
 const cities = ref([
   {id: 1, name: 'Краснодарский край', imageSrc: 'bg-card-kk'},
@@ -25,6 +27,7 @@ const cities = ref([
     </section>
 
     <bus-rent></bus-rent>
+    <section-excursions></section-excursions>
     <footer-page></footer-page>
   </div>
 </template>

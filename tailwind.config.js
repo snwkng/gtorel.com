@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     backgroundImage: {
       'home-screen': "url('@/assets/images/home-screen.jpg')",
+      'home-screen-2': "url('@/assets/images/home-screen-2.png')",
       'card-kk': "url('@/assets/images/places/beach-kk.jpg')",
       'card-azov': "url('@/assets/images/places/sea-azov.jpg')",
       'card-ab': "url('@/assets/images/places/shells-ab.jpg')",
