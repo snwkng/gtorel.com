@@ -1,7 +1,7 @@
 <script setup>
 import {ref} from 'vue'
 
-import FirstScreenSearch from "../components/FirstScreenSearch.vue"
+import MainSection from "../components/MainSection.vue"
 import FooterPage from "../components/Footer.vue"
 import DefaultCard from "../components/cards/DefaultCard.vue"
 import BusRent from "../components/BusRent.vue"
@@ -16,7 +16,7 @@ const cities = ref([
 
 <template>
   <div class="">
-    <first-screen-search></first-screen-search>
+    <main-section></main-section>
     <section class="container mx-auto px-10 py-10 overflow-hidden">
       <h2 class="text-2xl font-bold mb-8 pr-2 pl-2">Популярные направления</h2>
       <div class="flex flex-wrap">

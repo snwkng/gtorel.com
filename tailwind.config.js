@@ -28,6 +28,9 @@ module.exports = {
       height: {
         '200': 'calc(100vh - 200px)'
       },
+      ringColor: {
+        'DEFAULT': '#ff6d00',
+      },
     },
   },
   variants: {
@@ -35,7 +38,14 @@ module.exports = {
       color: ['active'],
       boxShadow: ['active', 'hover'],
       margin: ['last'],
+      marginLeft: ['last'],
+      borderWidth: ['hover', 'focus'],
+      borderRadius: ['first', 'last', 'hover', 'focus'],
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms")({
+      strategy: 'class',
+    }),
+  ],
 }
