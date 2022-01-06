@@ -23,7 +23,14 @@ module.exports = {
       blue: colors.sky,
       yellow: colors.amber,
       rose: colors.rose,
-      white: colors.white
+      white: colors.white,
+      black: colors.black,
+
+      paradisePink: '#ef476f',
+      orangeYellowCrayola: '#ffd166',
+      carribeanGreen: '#06D6A0',
+      blueNCS: '#118AB2',
+      midnightGreenEagleGreen: '#073B4C',
     },
     extend: {
       height: {

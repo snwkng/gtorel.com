@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .form-element {
-    @apply px-5 py-3 w-48 mr-px first:rounded-l-lg last:ml-0 last:rounded-r-lg focus:outline-none focus:ring-1 focus:ring-red-700 focus:border-red-700;
+  @apply px-5 py-3 w-56 mr-px border-0 text-lg first:rounded-l-lg last:ml-0 last:rounded-r-lg focus:outline-none focus:ring-1 focus:ring-paradisePink focus:border-paradisePink transition duration-200 ease-in-out;
 }
